@@ -4,8 +4,7 @@ import { CONFIG } from '../constants/config'
 
 export const shareStatus = (guesses: string[][], lost: boolean) => {
   navigator.clipboard.writeText(
-    CONFIG.language +
-      ' Whodle ' +
+      'Whodle ' +
       solutionIndex +
       ' ' +
       `${lost ? 'X' : guesses.length}` +
