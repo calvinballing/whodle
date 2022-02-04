@@ -32,5 +32,5 @@ export const generateEmojiGrid = (guesses: string[][]) => {
         })
         .join('')
     })
-    .join('\n') + 'https://calvinballing.github.io/whodle'
+    .join('\n') + '\nhttps://calvinballing.github.io/whodle'
 }
