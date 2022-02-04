@@ -10,7 +10,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
   return (
     <BaseModal title="About" isOpen={isOpen} handleClose={handleClose}>
       <p className="text-sm text-gray-500">
-        This is an open source clone of the game Wordle adapted to{' '}
+        This is an open source clone of the game Wordle adapted to become{' '}
         {CONFIG.language} by{' '}
         <a href={CONFIG.authorWebsite} className="underline font-bold">
           {CONFIG.author}
@@ -36,7 +36,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         >
           Aidan Pine's fork
         </a>{' '}
-        and customize it for another language! The words for this Wordle were
+        and customize it for another language! The words for this Whodle were
         sourced from{' '}
         <a href={CONFIG.wordListSourceLink} className="underline font-bold">
           {CONFIG.wordListSource}

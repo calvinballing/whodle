@@ -15,36 +15,36 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="W" status="correct" />
-        <Cell value="E" />
+        <Cell value="S" status="correct" />
         <Cell value="A" />
-        <Cell value="R" />
+        <Cell value="M" />
+        <Cell value="M" />
         <Cell value="Y" />
       </div>
       <p className="text-sm text-gray-500">
-        The letter W is in the word and in the correct spot.
+        The letter S is in the word and in the correct spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="P" />
-        <Cell value="I" />
+        <Cell value="E" />
         <Cell value="L" status="present" />
-        <Cell value="O" />
-        <Cell value="T" />
+        <Cell value="L" />
+        <Cell value="E" />
+        <Cell value="N" />
       </div>
       <p className="text-sm text-gray-500">
         The letter L is in the word but in the wrong spot.
       </p>
 
       <div className="flex justify-center mb-1 mt-4">
-        <Cell value="V" />
+        <Cell value="J" />
         <Cell value="A" />
-        <Cell value="G" />
-        <Cell value="U" status="absent" />
-        <Cell value="E" />
+        <Cell value="M" />
+        <Cell value="E" status="absent" />
+        <Cell value="S" />
       </div>
       <p className="text-sm text-gray-500">
-        The letter U is not in the word in any spot.
+        The letter E is not in the word in any spot.
       </p>
     </BaseModal>
   )
