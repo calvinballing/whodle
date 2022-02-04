@@ -57,7 +57,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
       <div className="flex justify-center mb-1">
         {ORTHOGRAPHY.slice(
           Math.floor(ORTHOGRAPHY.length * 0.4),
-          Math.floor(ORTHOGRAPHY.length * 0.7)
+          Math.floor(ORTHOGRAPHY.length * 0.74)
         ).map((char) => (
           <Key value={char} onClick={onClick} status={charStatuses[char]} />
         ))}
@@ -67,7 +67,7 @@ export const Keyboard = ({ onChar, onDelete, onEnter, guesses }: Props) => {
           Enter
         </Key>
         {ORTHOGRAPHY.slice(
-          Math.floor(ORTHOGRAPHY.length * 0.7),
+          Math.floor(ORTHOGRAPHY.length * 0.74),
           ORTHOGRAPHY.length
         ).map((char) => (
           <Key value={char} onClick={onClick} status={charStatuses[char]} />
