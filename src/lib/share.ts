@@ -24,11 +24,11 @@ export const generateEmojiGrid = (guesses: string[][]) => {
         .map((letter, i) => {
           switch (status[i]) {
             case 'correct':
-              return '🟩'
+              return '🤑'
             case 'present':
-              return '🟨'
+              return '😒'
             default:
-              return '⬜'
+              return '💀'
           }
         })
         .join('')
