@@ -181,16 +181,16 @@ function App() {
         About this game
       </button>
 
-      <p style="text-align:center">
-      Liked this?  Also try{' '}
-      <a
+      <div className="items-center">
+        Liked this?  Also try{' '}
+        <a
           href="https://calvinballing.github.io/wheredle"
           className="underline font-bold"
           >
           Wheredle
-          </a>
-          !
-          </p>
+        </a>
+        !
+      </div>
 
       <Alert message="Not enough letters" isOpen={isNotEnoughLetters} />
       <Alert message="Name not found" isOpen={isWordNotFoundAlertOpen} />
