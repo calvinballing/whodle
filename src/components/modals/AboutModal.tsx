@@ -36,19 +36,24 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         >
           Aidan Pine's fork
         </a>{' '}
-        and customize it for another language! The words for this Whodle were
+        and customize it for other languages! The words for Whodle are 
         sourced from{' '}
         <a href={CONFIG.wordListSourceLink} className="underline font-bold">
           {CONFIG.wordListSource}
         </a>
-        . Or,
-        {' you can also '}
+        .
+        {' Names from all states and D.C. were used as possible guesses (with a few manually added).  Allowable answers were determined by frequency in the data source, where names appearing at least 5000 times in the source data were included. You can also '}
         <a
           href="https://www.powerlanguage.co.uk/wordle/"
           className="underline font-bold"
         >
           play the original here
         </a>
+        . Consider learning about the work{' '}
+        <a href='https://www.givewell.org/' className="underline font-bold">
+          Givewell
+        </a>{' '}
+        is doing to identify outstanding charities.
       </p>
     </BaseModal>
   )
