@@ -1,4 +1,4 @@
-const gameStateKey = 'gameState'
+const whodleGameStateKey = 'gameState'
 
 type StoredGameState = {
   guesses: string[][]
