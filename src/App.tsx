@@ -160,7 +160,7 @@ function App() {
         isOpen={isStatsModalOpen}
         handleClose={() => setIsStatsModalOpen(false)}
         guesses={guesses}
-        gameStats={stats}
+        whodleGameStats={stats}
         isGameLost={isGameLost}
         isGameWon={isGameWon}
         handleShare={() => {
@@ -180,6 +180,8 @@ function App() {
       >
         About this game
       </button>
+
+      <Text>Liked this?  Also try Wheredle!</Text>
 
       <Alert message="Not enough letters" isOpen={isNotEnoughLetters} />
       <Alert message="Name not found" isOpen={isWordNotFoundAlertOpen} />

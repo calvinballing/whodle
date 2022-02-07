@@ -5,16 +5,16 @@ type StoredGameState = {
   solution: string
 }
 
-export const saveGameStateToLocalStorage = (gameState: StoredGameState) => {
-  localStorage.setItem(gameStateKey, JSON.stringify(gameState))
+export const saveGameStateToLocalStorage = (whodleGameState: StoredGameState) => {
+  localStorage.setItem(whodleGameStateKey, JSON.stringify(whodleGameState))
 }
 
 export const loadGameStateFromLocalStorage = () => {
-  const state = localStorage.getItem(gameStateKey)
+  const state = localStorage.getItem(whodleGameStateKey)
   return state ? (JSON.parse(state) as StoredGameState) : null
 }
 
-const gameStatKey = 'gameStats'
+const whodleGameStatKey = 'whodleGameStats'
 
 export type GameStats = {
   winDistribution: number[]
@@ -25,11 +25,11 @@ export type GameStats = {
   successRate: number
 }
 
-export const saveStatsToLocalStorage = (gameStats: GameStats) => {
-  localStorage.setItem(gameStatKey, JSON.stringify(gameStats))
+export const saveStatsToLocalStorage = (whodleGameStats: GameStats) => {
+  localStorage.setItem(whodleGameStatKey, JSON.stringify(whodleGameStats))
 }
 
 export const loadStatsFromLocalStorage = () => {
-  const stats = localStorage.getItem(gameStatKey)
+  const stats = localStorage.getItem(whodleGameStatKey)
   return stats ? (JSON.parse(stats) as GameStats) : null
 }
