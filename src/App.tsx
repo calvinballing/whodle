@@ -181,7 +181,7 @@ function App() {
         About this game
       </button>
 
-      <div className="items-center">
+      <div className="text-center py-10">
         Liked this?  Also try{' '}
         <a
           href="https://calvinballing.github.io/wheredle"
