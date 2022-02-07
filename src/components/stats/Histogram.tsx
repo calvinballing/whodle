@@ -2,11 +2,11 @@ import { GameStats } from '../../lib/localStorage'
 import { Progress } from './Progress'
 
 type Props = {
-  gameStats: GameStats
+  whodleGameStats: GameStats
 }
 
-export const Histogram = ({ gameStats }: Props) => {
-  const winDistribution = gameStats.winDistribution
+export const Histogram = ({ whodleGameStats }: Props) => {
+  const winDistribution = whodleGameStats.winDistribution
   const maxValue = Math.max(...winDistribution)
 
   return (

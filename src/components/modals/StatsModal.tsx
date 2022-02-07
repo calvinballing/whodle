@@ -10,7 +10,7 @@ type Props = {
   isOpen: boolean
   handleClose: () => void
   guesses: string[][]
-  gameStats: GameStats
+  whodleGameStats: GameStats
   isGameLost: boolean
   isGameWon: boolean
   handleShare: () => void
@@ -20,25 +20,25 @@ export const StatsModal = ({
   isOpen,
   handleClose,
   guesses,
-  gameStats,
+  whodleGameStats,
   isGameLost,
   isGameWon,
   handleShare,
 }: Props) => {
-  if (gameStats.totalGames <= 0) {
+  if (whodleGameStats.totalGames <= 0) {
     return (
       <BaseModal title="Statistics" isOpen={isOpen} handleClose={handleClose}>
-        <StatBar gameStats={gameStats} />
+        <StatBar whodleGameStats={whodleGameStats} />
       </BaseModal>
     )
   }
   return (
     <BaseModal title="Statistics" isOpen={isOpen} handleClose={handleClose}>
-      <StatBar gameStats={gameStats} />
+      <StatBar whodleGameStats={whodleGameStats} />
       <h4 className="text-lg leading-6 font-medium text-gray-900">
         Guess Distribution
       </h4>
-      <Histogram gameStats={gameStats} />
+      <Histogram whodleGameStats={whodleGameStats} />
       {(isGameLost || isGameWon) && (
         <div className="mt-5 sm:mt-6 columns-2">
           <div>

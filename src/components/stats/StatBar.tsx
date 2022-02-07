@@ -1,7 +1,7 @@
 import { GameStats } from '../../lib/localStorage'
 
 type Props = {
-  gameStats: GameStats
+  whodleGameStats: GameStats
 }
 
 const StatItem = ({
@@ -19,13 +19,13 @@ const StatItem = ({
   )
 }
 
-export const StatBar = ({ gameStats }: Props) => {
+export const StatBar = ({ whodleGameStats }: Props) => {
   return (
     <div className="flex justify-center my-2">
-      <StatItem label="Total tries" value={gameStats.totalGames} />
-      <StatItem label="Success rate" value={`${gameStats.successRate}%`} />
-      <StatItem label="Current streak" value={gameStats.currentStreak} />
-      <StatItem label="Best streak" value={gameStats.bestStreak} />
+      <StatItem label="Total tries" value={whodleGameStats.totalGames} />
+      <StatItem label="Success rate" value={`${whodleGameStats.successRate}%`} />
+      <StatItem label="Current streak" value={whodleGameStats.currentStreak} />
+      <StatItem label="Best streak" value={whodleGameStats.bestStreak} />
     </div>
   )
 }
