@@ -36,7 +36,7 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         >
           Aidan Pine's fork
         </a>{' '}
-        and customize it for other languages! Find more Wordles variants at{' '}
+        and customize it for other languages! Find more Wordle variants at{' '}
         <a
           href="https://rwmpelstilzchen.gitlab.io/wordles/"
           className="underline font-bold"
