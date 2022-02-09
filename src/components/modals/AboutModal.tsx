@@ -36,7 +36,14 @@ export const AboutModal = ({ isOpen, handleClose }: Props) => {
         >
           Aidan Pine's fork
         </a>{' '}
-        and customize it for other languages! The words for Whodle are 
+        and customize it for other languages! Find more Wordles variants at{' '}
+        <a
+          href="https://rwmpelstilzchen.gitlab.io/wordles/"
+          className="underline font-bold"
+        >
+          Wordles of the World
+        </a>.{' '}      
+        The words for Whodle are 
         sourced from{' '}
         <a href={CONFIG.wordListSourceLink} className="underline font-bold">
           {CONFIG.wordListSource}
